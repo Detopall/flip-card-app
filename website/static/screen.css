@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+body {
+	width: 90%;
+	margin: 4rem 3rem;
+	font-size: 1.3rem;
+	font-family: 'Concert One', "Open Sans", cursive;
+	background-image: linear-gradient(to right, #8360c3, #2ebf91);
+}
+
+header {
+	display: block;
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 2rem;
+	text-shadow: 0.09rem 0.09rem orangered;
+}
+
+img {
+	width: 30rem;
+	margin-top: 2rem;
+	margin-left: calc(50% - 15rem);
+}
+
+img:hover {
+	-webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -webkit-transition: 1s ease-in-out;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	align-items: center;
+	padding: 0.5rem;
+	border: 0.1rem solid black;
+	background-color: darkgrey;
+	background-image: linear-gradient(to left, #434343 0%, grey 90%);
+}
+
+nav > .links > a {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	text-decoration: none;
+	color: black;
+	text-shadow: 0.05rem 0.05rem red;
+}
+
+nav > .links > a:hover {
+	color: darkgrey;
+	text-decoration: underline;
+}
+
+nav #username {
+	padding-right: 20rem;
+	align-items: center;
+	text-shadow: 0.05rem 0.05rem red;
+}
+
+main {
+	border: 0.1rem solid black;
+	background-color: lightgrey;
+	padding-bottom: 3rem;
+}
+
+h3 {
+	margin-left: 40%;
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 15rem;
+	margin-left: 40%;
+}
+
+form > label, input {
+	margin-bottom: 0.5rem;
+}
+
+button {
+	margin-top: 1rem;
+	width: 5rem;
+	background-color: white;
+	border: solid 0.1rem darkgray;
+	font-family: 'Concert One', "Open Sans", cursive;
+}
+
+div.success {
+	background-color: green;
+}
+
+div.error {
+	background-color: red;
+}
+
+div.success, div.error {
+	text-align: center;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 2rem;
+	margin-top: 5rem;
+	margin-left: 5rem;
+	text-decoration: underline;
+}
+
+#texts {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 5rem;
+}
+
+textarea {
+	resize: none;
+	border-radius: 0.5rem;
+	font-size: 1rem;
+}
+
+#texts button {
+	text-align: center;
+	border-radius: 0.5rem;
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#texts button:hover {
+	background-color: aqua;
+}
+
+#user-texts li {
+	list-style-type: none;
+}
+
+#friends-texts h3 {
+	margin-left: 0;
+}
+
+#user-texts button {
+	height: 2rem;
+	width: 2rem;
+	margin-right: 0.5rem;
+	background-color: red;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#user-texts button:hover {
+	background-color: orangered;
+}
