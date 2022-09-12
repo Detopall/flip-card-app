@@ -4,4 +4,21 @@
 
 {% block username %} <p id="username"> {{username}} </p> {% endblock username %}
 
-{% block content %} <img src="../static/images/logo-flip-card.svg" alt="Logo" title="Logo"> {% endblock content %}
+{% block content %} 
+
+<article id="info">
+	<h2> Welcome to the Flip Card App </h2>
+	<p>This app will help you study and recite. You can use the <span>Flip Card App</span> for vocabulary, definitions, quizzes and so much more.</p>
+	
+	<p> If you head over to the <span>"Study"</span> page, you'll find all of your created cards. If this is the first time using this app or you've just created your account, then there aren't any cards visible.</p>
+	
+	<p> To create a card, you can click on the <span>"Create Card"</span> page. There you can create an card you like. Be sure to confirm your card by clicking on the <span>"save"</span> button. Or discard it by clicking on the <span>"discard"</span> button. </p>
+
+	<h2>How Do I Study?</h2>
+	<p> Go over to the <span>"Study"</span> page and click on one of your created cards. This will turn the card around revealing the answer.</p>
+	
+	<p> Have fun studying! </p> 
+	
+</article>
+
+{% endblock content %}

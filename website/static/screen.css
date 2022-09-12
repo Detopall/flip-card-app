@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
 body {
 	width: 90%;
@@ -64,6 +64,7 @@ nav #username {
 	padding-right: 20rem;
 	align-items: center;
 	text-shadow: 0.05rem 0.05rem red;
+	font-size: 1.5rem;
 }
 
 main {
@@ -94,7 +95,17 @@ button {
 	background-color: white;
 	border: solid 0.1rem darkgray;
 	font-family: 'Concert One', "Open Sans", cursive;
-	cursor: pointer;
+	cursor: pointer;	
+}
+
+button > a {
+	text-decoration: none;
+	color:black;
+	font-size: 1rem;
+}
+
+#back {
+	margin-left: 2rem;
 }
 
 #save {
@@ -127,3 +138,26 @@ textarea {
 	padding-bottom: 2rem;
 }
 
+.container {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.container article {
+	border: 0.1rem solid black;
+	margin: 0 1rem 1rem 1rem;
+	padding: 0 1rem 0 1rem;
+}
+
+#info {
+	display: block;
+	text-align: center;
+	margin: 0 5rem 0 5rem;
+}
+
+span {
+	font-weight: bold;
+}

@@ -4,4 +4,16 @@
 
 {% block username %} <p id="username"> {{username}} </p> {% endblock username %}
 
-{% block content %} This works study {% endblock content %}
+{% block content %} 
+
+<div class="container">
+	{% for card in user.cards %}
+		<article id="{{card.id}}">
+			<h2>{{card.description}}</h2>
+			<p>{{ card.front_side }}</p>
+		</article>
+	{% endfor %}
+</div>
+	
+<button type="button" id="back"><a href="/">Back</a></button>
+{% endblock content %}
