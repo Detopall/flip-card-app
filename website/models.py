@@ -8,7 +8,6 @@ class Card(db.Model):
     description = db.Column(db.String(100))
     front_side = db.Column(db.String(1000))
     back_side = db.Column(db.String(1000))
-    date = db.Column(db.DateTime(timezone=True), default=func.now())
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
 

@@ -4,4 +4,23 @@
 
 {% block username %} <p id="username"> {{username}} </p> {% endblock username %}
 
-{% block content %} This works create-card {% endblock content %}
+{% block content %} 
+
+<h3> Create Flip Card </h3>
+
+<form method="POST">
+	<label for="description"> Description </label>
+	<input type="text" name="description" id="description" required autocomplete="off">
+
+	<label for="front-side"> Front Side </label>
+	<textarea id="front-side" name="front-side" required></textarea>
+
+	<label for="back-side"> Back Side </label>
+	<textarea id="back-side" name="back-side" required></textarea>
+
+	<button type="submit" id="save"> Save </button>
+</form>
+
+<button type="button" id="discard"> Discard </button>
+
+{% endblock content %}
