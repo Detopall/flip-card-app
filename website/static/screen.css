@@ -150,6 +150,11 @@ textarea {
 	border: 0.1rem solid black;
 	margin: 0 1rem 1rem 1rem;
 	padding: 0 1rem 0 1rem;
+	cursor: pointer;
+}
+
+.container article:hover {
+	background-color: darkgray;
 }
 
 #info {
