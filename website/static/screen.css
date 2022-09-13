@@ -151,6 +151,7 @@ textarea {
 	margin: 0 1rem 1rem 1rem;
 	padding: 0 1rem 0 1rem;
 	cursor: pointer;
+	position: relative;
 }
 
 .container article:hover {
@@ -165,4 +166,18 @@ textarea {
 
 span {
 	font-weight: bold;
+}
+
+#remove {
+	border-radius: 50%;
+	background-color: red;
+	color: white;
+	position:absolute;
+	width: fit-content;
+	top: -1.5rem;
+	left: -0.5rem;
+}
+
+#remove:hover {
+	background-color: lightsalmon;
 }

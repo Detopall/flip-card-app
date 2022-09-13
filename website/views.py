@@ -1,5 +1,5 @@
 from unicodedata import category
-from flask import Blueprint, render_template, request, flash
+from flask import Blueprint, render_template, request, flash, jsonify
 from flask_login import login_required, current_user
 from .models import Card, User
 from . import db
@@ -34,4 +34,18 @@ def checkForValidCard(description, front_side, back_side):
 @views.route("/study")
 def study():
     return render_template("study.html", title="Study", username=current_user.username, user=current_user)
+
+@views.route("/delete-card", methods=["DELETE"])
+def delete_card():
+    card = json.loads(request.data)
+    print(card)
+    cardId = card['cardId']
+    card = Card.query.get(cardId)
+    if card:
+        if card.user_id == current_user.id:
+            db.session.delete(card)
+            db.session.commit()
+            flash("Text deleted!", category="success")
+
+    return jsonify({})
 

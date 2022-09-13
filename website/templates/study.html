@@ -8,7 +8,8 @@
 
 <div class="container">
 	{% for card in user.cards %}
-		<article id="{{card.id}}" data-back="{{ card.back_side }}" data-description="{{card.description}}" class="turn-to-back">
+		<article data-back="{{ card.back_side }}" data-description="{{card.description}}" class="turn-to-back">
+			<button type="button" id="remove" data-id="{{card.id}}">-</button>
 			<h2>{{card.description}}</h2>
 			<p>{{ card.front_side }}</p>
 		</article>
