@@ -8,7 +8,7 @@ function init(){
 }
 
 function removeCard(e){
-	if (!e.target.closest("#remove")) return;
+	if (!e.target.closest(".container #remove")) return;
 	const cardId = parseInt(e.target.getAttribute("data-id"));
 	fetch("/delete-card", {
     method: "DELETE",
@@ -19,9 +19,9 @@ function removeCard(e){
 }
 
 function turnCard(e){
-	if (e.target.closest("#remove")) return;
-	if (!e.target.closest("article")) return;
-	const article = e.target.closest("article");
+	if (e.target.closest(".container #remove")) return;
+	if (!e.target.closest(".container article")) return;
+	const article = e.target.closest(".container article");
 	if (article.classList.contains("turn-to-back")){
 		showBack(article);
 	} else {
